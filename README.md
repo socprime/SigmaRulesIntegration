@@ -19,6 +19,6 @@ Sigma Use Cases
 
 Official Sigma repository: https://github.com/Neo23x0/sigma
 
-Sigma Rules Integration Pack comes with parser and map file for ArcSight FlexConnector Multiple Folder File, that parse and enriche data with information from Sigma rules.
+Sigma Rules Integration Pack comes with parser and map file for ArcSight FlexConnector Multiple Folder File, that parse and enrich data with information from Sigma rules.
 
 You can download ArcSight package and detailed instructions how to use it from https://tdm.socprime.com/use-case-library/info/514/
