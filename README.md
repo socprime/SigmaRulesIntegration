@@ -59,7 +59,7 @@ deviceVendor = "ArcSight" and deviceProduct = "ArcSight" and deviceEventClassId 
 endTime,name,sourceAddress,destinationAddress,priority,deviceVendor,deviceProduct,categoryBehavior,categoryDeviceGroup,categoryOutcome,categorySignificance,destinationHostName,destinationPort,destinationProcessName,destinationServiceName,destinationUserId,destinationUserName,deviceAction,deviceAddress,deviceHostname,deviceProcessName,deviceCustomNumber1,deviceCustomNumber1Label,deviceCustomNumber2,deviceCustomNumber2Label,deviceCustomString1,deviceCustomString1Label,deviceCustomString2,deviceCustomString2Label,deviceCustomString3,deviceCustomString3Label,deviceCustomString4,deviceCustomString4Label,deviceCustomString5,deviceCustomString5Label,deviceCustomString6,deviceCustomString6Label,fileName,filePath,flexString1,flexString1Label,flexString2,flexString2Label,sourceHostName,sourcePort,sourceProcessName,sourceServiceName,sourceUserId,sourceUserName
 ```
 ```Note: Parser is configured to parse files in this field sequence. Don’t change fields.```
-```In case you need to add new fields contact dev@socprime.com.```
+```In case you need to add new fields contact SOC Prime.```
    - [x] Choose option 'Include only CEF events'.
    - [x] Enable 'Sigma: RULE NAME job'.
 
@@ -83,7 +83,7 @@ You should see 10 events with changed flexString1 field to 'Sigma: Test Rule'.
 endTime,name,sourceAddress,destinationAddress,priority,deviceVendor,deviceProduct,categoryBehavior,categoryDeviceGroup,categoryOutcome,categorySignificance,destinationHostName,destinationPort,destinationProcessName,destinationServiceName,destinationUserId,destinationUserName,deviceAction,deviceAddress,deviceHostname,deviceProcessName,deviceCustomNumber1,deviceCustomNumber1Label,deviceCustomNumber2,deviceCustomNumber2Label,deviceCustomString1,deviceCustomString1Label,deviceCustomString2,deviceCustomString2Label,deviceCustomString3,deviceCustomString3Label,deviceCustomString4,deviceCustomString4Label,deviceCustomString5,deviceCustomString5Label,deviceCustomString6,deviceCustomString6Label,fileName,filePath,flexString1,flexString1Label,flexString2,flexString2Label,sourceHostName,sourcePort,sourceProcessName,sourceServiceName,sourceUserId,sourceUserName
 ```
 ```Note: Parser is configured to parse files in this field sequence. Don’t change fields.```
-```In case you need to add new fields contact dev@socprime.com.```
+```In case you need to add new fields contact SOC Prime.```
    - [x] Choose option 'Include only CEF events'. 
   5. Enable 'Sigma: Test Rule job'. 
   6. In 15 minutes Saved Search should run and save output to csv file into the /opt/arcsight/logger/userdata/logger/user/logger/data/savedsearch directory, which Flex Connector (installed in p.1) will processed that file and send event to the ESM.
