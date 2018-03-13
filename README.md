@@ -61,7 +61,7 @@ endTime,name,sourceAddress,destinationAddress,priority,deviceVendor,deviceProduc
 ```Note: Parser is configured to parse files in this field sequence. Don’t change fields.```
 ```In case you need to add new fields contact dev@socprime.com.```
    - [x] Choose option 'Include only CEF events'.
-   - [x] Enable 'Sigma: Test Rule job'.
+   - [x] Enable 'Sigma: RULE NAME job'.
 
 ## How to test
 
