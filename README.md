@@ -1,4 +1,4 @@
-# Sigma Rules Integration
+#  Sigma Rules Integration
 
 
 Sigma is a new revolutionary way to make better and faster threat detection content for SIEM! Sigma Rules Integration Pack is a free package developed by SOC Prime for integrating Sigma rules into ArcSight ESM, Command Center and Logger for threat hunting purposes. Content includes SOC-ready dashboard, SOC channel and Flex connector to enrich and pickup Sigma search results.
@@ -22,3 +22,16 @@ Official Sigma repository: https://github.com/Neo23x0/sigma
 Sigma Rules Integration Pack comes with parser and map file for ArcSight FlexConnector Multiple Folder File, that parse and enrich data with information from Sigma rules.
 
 You can download ArcSight package and detailed instructions how to use it from https://tdm.socprime.com/use-case-library/info/514/
+
+# How it Works
+
+In TDM you can generate ArcSight Searches from existing sigma rules or from your custom. Then you check, save and schedule Saved Search in ArcSight Command Center or in Logger web console with saving output to local directory. After this Flex connector reads csv result files, parse it, enrich with more detailed data from sigma rule and send to the ESM.
+
+# Installation 
+
+1. Install on the Logger or ESM server ArcSight FlexConnector Multiple Folder File with the ESM, on which you will install analytical package, as destination.
+2. Configure Flex Connector to monitor folder /opt/arcsight/logger/userdata/logger/user/logger/data/savedsearch with the parser sigma_csv.sdkfilereader.properties that is included in the package. Put file sigma_csv.sdkfilereader.properties to ../current/user/agent/flexagent/ folder.
+3. Add map.0.properties file to Flex Connector. Put file map.0.properties to ../current/user/agent/map/ folder.
+4. Install Connector as a service.
+5. Download content package SOC_Prime_Sigma_Rules_Integration_Pack_vx.x.arb for ArcSight ESM from https://tdm.socprime.com/use-case-library/info/514/. Import package to ArcSight Manager with ArcSight Console.
+
